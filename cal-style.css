@@ -1,0 +1,293 @@
+/* body, html {
+    height: 100%;
+    margin: 0;
+} */
+
+body {
+    max-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bodyBGClr) ;
+}
+
+:root{
+    --bodyBGClr:#200833;
+     --primary-color-cal: #EDDA59;
+     --btnSectionBGColor: #250b41;
+     --btnBGColor:#331B4D;
+     --btnBorderColor:#56077D;
+     --delbtnBGColor:#31aaa2;
+     --togglebtn:#c45623;
+     --assignbtn:#31aaa2;
+     --delResetbtnBG:#56077D;
+     --delResetBorderClr:#863aaf;
+     --toggleBGClr:#c2bebe;
+     
+}
+
+
+.secondCss{
+    --bodyBGClr:white;
+     --primary-color-cal: rgb(44, 44, 44);
+     --btnSectionBGColor:#c2bebe;
+     --btnBGColor:white;
+     --btnBorderColor:#A99D91;
+     --assignbtn:#c45623;
+     --delResetbtnBG:#008187;
+     --delResetBorderClr:#006066;
+     --toggleBGClr:#354764;
+}
+
+.thirdCss{  
+    --bodyBGClr:#354764;
+    --primary-color-cal: #000000;
+    --btnSectionBGColor: #1A2230;
+    --btnBGColor:white;
+    --btnBorderColor:#A99D91;
+    --delbtnBGColor:#31aaa2;
+    --togglebtn:#c45623;
+    --assignbtn:#E62F17;
+    --delResetbtnBG:#5E7197;
+    --delResetBorderClr:#3A4F72;
+    --toggleBGClr:#200833;}
+
+/*---------------- container css ---------------- */
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    /* max-width: 50vw; */
+    /* height: 100vh; */
+    padding: 5px;
+    justify-self: center;
+}
+
+/*---------------- all three section css ---------------- */
+section {
+    margin: 1rem;
+}
+
+/*---------------- top section css ---------------- */
+.topSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* color: #EDDA59; */
+    color: var( --primary-color-cal);
+    /* color: var(--topSectionClr); */
+    margin-bottom: 2rem;
+}
+.calcName p{
+    margin-bottom: 2px;
+}
+
+.topSection div:nth-child(1) {
+    font-weight:800;
+    font-size: 1.5rem;
+}
+
+
+.ToggleDiv {
+    display: flex;
+    align-items: flex-end;
+    font-size: 10px;
+    line-height: 1;
+    
+}
+.ToggleDiv p{
+    margin-bottom: 3px;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+.ToggleStages {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+   /* Align items at the bottom */
+}
+
+.ToggleStages li {
+    list-style: none;
+    float: left;
+    margin: 11px 13px;
+    font-size: 10px;
+}
+
+.ToggleStages li:nth-child(1){margin-left: 3px;}
+.ToggleStages li:nth-child(3){    margin-right: 0px;}
+
+  .switch {
+    width: 80px;
+    height: 20px;
+    background-color:var(--toggleBGClr);
+    border-radius: 15px;
+    position: relative;
+    
+  }
+  
+  .toggle {
+    width: 12px;
+    height: 12px;
+    background:var(--togglebtn);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    transition: transform 0.3s ease;
+  }
+
+  
+
+/*---------------- display section css ---------------- */
+
+.displayRow {
+    background-color:  var(--btnSectionBGColor);
+    height: 60px;
+    padding: 10px 20px;
+    margin-top: 0 !important;
+    border-radius: 5px;
+
+}
+
+.displayRow input {
+    text-align: right;
+    background-color: unset;
+    border: unset;
+    color: var( --primary-color-cal);
+    font-weight: bolder;
+    font-size: 1.8rem;
+    height: 60px;
+    width: 100%;
+}
+
+.displayRow input:focus {
+    outline: none;
+}
+
+/*---------------- btn section css ---------------- */
+
+.buttonSection {
+    background-color: var(--btnSectionBGColor);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.divRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn {
+    flex: 1;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    color: var( --primary-color-cal);
+    background-color: var(--btnBGColor);
+    font-size: 1.5rem;
+    font-weight:900;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom: 3px solid var(--btnBorderColor);
+}
+
+
+/*----------------  css on operatr btns for adjust width ---------------- */
+
+/* .dotbtn, .minusbtn, .dividebtn,  .multiplybtn{
+    width: 50px;
+} */
+
+.delbtn, .resetbtn {
+    /* padding: 7px; */
+    color: white;
+    background-color: var(--delResetbtnBG);
+    border-color: var(--delResetBorderClr);
+    
+}
+
+.assignmentbtn {
+    color: white;
+    background-color: var(--assignbtn);
+    border-color: var(--assignbtn) ;
+}
+
+/*---------------- toggle css ---------------- */
+
+.bodyToggle{
+    background-color: #3B4664 !important;
+}
+
+.deltogglebtn,
+.resettogglebtn {
+    background-color: #65739B !important;
+    color: white !important;
+    border-color: #3B4664 !important;
+}
+
+.assignmenttogglebtn {
+    background-color: #c45623 !important;
+    color: white !important;
+    border-color: #c45623 !important;
+}
+
+.btntoggle {
+    background-color: rgba(255, 255, 255, 0.767) ;
+    color: #252E44 ;
+    border-color: #9b9365 ;
+    /* box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5); */
+}
+
+/* .containerToggle {
+    background-color: #3B4664 !important;
+} */
+
+.buttonSectionToogle {
+    background-color: #1F2D43 !important;
+}
+
+.topSectionToggle {
+
+    color: white;
+}
+
+.displayRowToggle {
+    background-color: #1F2D43 !important;
+    color: white !important;
+}
+
+
+
+
+
+
+
+
+/*---------------- media qurey css ---------------- */
+@media (max-width: 400px) {
+    .delbtn {
+        padding-left: 9.5px !important;
+        padding-right: 9.5px;
+    }
+   
+
+
+}
+
+@media (max-width: 340px) {
+    .delbtn {
+        font-size: calc(3vw + 4px);
+
+    }
+}
+
