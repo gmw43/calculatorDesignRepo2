@@ -32,11 +32,7 @@ function toggleSwitch() {
     switchState = (switchState + 1) % 4;
 }
 
-// change css on toggle
 
-// click.addEventListener('click', () => {
-//     document.body.classList.toggle("secondCss");
-// });
 
 // calculator functionality
 
