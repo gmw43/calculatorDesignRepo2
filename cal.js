@@ -20,12 +20,16 @@ function toggleSwitch() {
             document.body.classList.toggle("thirdCss");
             break;
         case 2:
-            toggleElement.style.transform = 'translateX(0)';
-            document.body.classList.remove("thirdCss", "secondCss");
+            toggleElement.style.transform = 'translateX(30px)';
+            document.body.classList.toggle("thirdCss");
             break;
+            case 3:
+                toggleElement.style.transform = 'translateX(0)';
+                document.body.classList.remove("thirdCss", "secondCss");
+                break;
     }
 
-    switchState = (switchState + 1) % 3;
+    switchState = (switchState + 1) % 4;
 }
 
 // change css on toggle

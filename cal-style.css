@@ -16,7 +16,9 @@ body {
 
 :root{
     --bodyBGClr:#200833;
+    --topSectionClr:#EDDA59;
      --primary-color-cal: #EDDA59;
+     --screenNoClr:#EDDA59;
      --btnSectionBGColor: #250b41;
      --btnBGColor:#331B4D;
      --btnBorderColor:#56077D;
@@ -32,7 +34,9 @@ body {
 
 .secondCss{
     --bodyBGClr:white;
-     --primary-color-cal: rgb(44, 44, 44);
+    --topSectionClr:#2c2c2c;
+     --primary-color-cal: #2c2c2c;
+     --screenNoClr:#2c2c2c;
      --btnSectionBGColor:#c2bebe;
      --btnBGColor:white;
      --btnBorderColor:#A99D91;
@@ -45,11 +49,13 @@ body {
 .thirdCss{  
     --bodyBGClr:#354764;
     --primary-color-cal: #000000;
+    --topSectionClr:white;
+    --screenNoClr:white;
     --btnSectionBGColor: #1A2230;
     --btnBGColor:white;
     --btnBorderColor:#A99D91;
     --delbtnBGColor:#31aaa2;
-    --togglebtn:#c45623;
+    /* --togglebtn:#c45623; */
     --assignbtn:#E62F17;
     --delResetbtnBG:#5E7197;
     --delResetBorderClr:#3A4F72;
@@ -81,7 +87,7 @@ section {
     flex-direction: row;
     justify-content: space-between;
     /* color: #EDDA59; */
-    color: var( --primary-color-cal);
+    color: var( --topSectionClr);
     /* color: var(--topSectionClr); */
     margin-bottom: 2rem;
 }
@@ -163,7 +169,7 @@ section {
     text-align: right;
     background-color: unset;
     border: unset;
-    color: var( --primary-color-cal);
+    color: var(--screenNoClr);
     font-weight: bolder;
     font-size: 1.8rem;
     height: 60px;
@@ -222,49 +228,6 @@ section {
     border-color: var(--assignbtn) ;
 }
 
-/*---------------- toggle css ---------------- */
-
-.bodyToggle{
-    background-color: #3B4664 !important;
-}
-
-.deltogglebtn,
-.resettogglebtn {
-    background-color: #65739B !important;
-    color: white !important;
-    border-color: #3B4664 !important;
-}
-
-.assignmenttogglebtn {
-    background-color: #c45623 !important;
-    color: white !important;
-    border-color: #c45623 !important;
-}
-
-.btntoggle {
-    background-color: rgba(255, 255, 255, 0.767) ;
-    color: #252E44 ;
-    border-color: #9b9365 ;
-    /* box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5); */
-}
-
-/* .containerToggle {
-    background-color: #3B4664 !important;
-} */
-
-.buttonSectionToogle {
-    background-color: #1F2D43 !important;
-}
-
-.topSectionToggle {
-
-    color: white;
-}
-
-.displayRowToggle {
-    background-color: #1F2D43 !important;
-    color: white !important;
-}
 
 
 
